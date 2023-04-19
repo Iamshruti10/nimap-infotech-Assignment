@@ -1,0 +1,54 @@
+<div class="container">
+
+  <div class="title-group">
+      <h1 class="mat-h1">Edit People </h1>
+      <mat-divider fxFlex="1 0"></mat-divider><br>
+  
+    <form [formGroup]="reactiveForm" (ngSubmit)="editPeople()" >
+  
+      <table class="table table-striped">
+  
+          <thead>
+              <tr>
+                  <th>Category ID</th>
+                  <th>Category Name</th>
+                  <th>Product ID</th>
+                  <th>Product Name</th>
+                 
+              </tr>
+          </thead>
+  
+          <tbody>
+  
+              <tr>
+                  <td>
+                      <input  placeholder="Category ID" formControlName="category_id" required>
+                  </td>
+  
+                  <td>
+                      <input  placeholder="Category Name" formControlName="category_name" required>
+                  </td>
+  
+                  <td>
+                      <input  placeholder="Product ID"formControlName="product_id" required>
+                  </td>
+  
+                  <td>
+                      <input  placeholder="Product Name" formControlName="product_name" required>
+                  </td>
+  
+              </tr>
+  
+          </tbody>
+      </table>
+    
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+  
+  
+    </form>
+  
+  </div>
+  
+  </div>
